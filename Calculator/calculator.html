@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Calculator</title>
+<script type="text/javascript" src="C:\Users\HP\Desktop\CodSoft\Calculator\calculator_js.js"></script>
+<link rel="stylesheet" type="text/css" href="C:\Users\HP\Desktop\CodSoft\Calculator\calculator_css.css"></link>
+</head>
+<body>
+<form>
+<center>
+<table bordercolor="indigo" bgcolor="lightgray" cellspacing="5" height="73%">
+<tr>
+<td colspan="4"><font size="6"><center><p><u>CALCULATOR</u></p></center></font></td>
+</tr>
+<tr>
+<td colspan="4"><input style="height:90px; width:390px;" type="text" id="result" value="" placeholder="0"></input></td>
+</tr>
+<br><br>
+<tr>
+<td colspan="2" align="center"><input style="width:190" type="button" id="clear" value="All Clear" onclick="result.value = ''"></input></td>
+<td align="center"><input type="button" id="mod" value="%" onclick="result.value += '%'"></td>
+<td align="center"><input type="button" id="divide" value="/" onclick="result.value += '/' "></input></td>
+</tr>
+<tr>
+<td align="center"><input type="button" id="7" value="7" onclick="result.value += '7' "></input></td>
+<td align="center"><input type="button" id="8" value="8" onclick="result.value += '8' "></input></td>
+<td align="center"><input type="button" id="9" value="9" onclick="result.value += '9' "></input></td>
+<td align="center"><input type="button" id="+" value="+" onclick="result.value += '+' "></input></td>
+</tr>
+<br>
+<tr>
+<td align="center"><input type="button" id="4" value="4" onclick="result.value += '4' "></input></td>
+<td align="center"><input type="button" id="5" value="5" onclick="result.value += '5' "></input></td>
+<td align="center"><input type="button" id="6" value="6" onclick="result.value += '6' "></input></td>
+<td align="center"><input type="button" id="-" value="-" onclick="result.value += '-' "></input></td>
+</tr>
+<br>
+<tr>
+<td align="center"><input type="button" id="1" value="1" onclick="result.value += '1' "></input></td>
+<td align="center"><input type="button" id="2" value="2" onclick="result.value += '2' "></input></td>
+<td align="center"><input type="button" id="3" value="3" onclick="result.value += '3' "></input></td>
+<td align="center"><input type="button" id="*" value="*" onclick="result.value += '*' "></input></td>
+</tr>
+<br>
+<tr>
+<td colspan="2" align="center"><input style="width:190" type="button" id="op" value="0" onclick="result.value += '0' "></input></td>
+<td align="center"><input type="button" id="point" value="." onclick="result.value += '.'"></input></td>
+<td align="center"><input type="button" id="equal" value="=" onclick="result.value = eval(result.value)"></input></td>
+</tr>
+</table>
+<center>
+</form>
+</body>
+</html>
